@@ -19,6 +19,8 @@ export const Calculator = () => {
     setCream(Math.round(weight * cream_const));
     setSuger(Math.round(weight * suger_const));
   }, [weight]);
+
+  const isWaight = weight !== 0 && weight !== "";
   return (
     <>
       <input
@@ -28,7 +30,7 @@ export const Calculator = () => {
         onChange={handleChange}
       />
 
-      {weight && (
+      {isWaight && (
         <div>
           <h2>Требуеться игридиентов</h2>
           <p>Творог: {cheese}г</p>
