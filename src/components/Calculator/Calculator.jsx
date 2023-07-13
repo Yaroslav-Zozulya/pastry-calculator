@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import bg1 from "@/images/bg1.jpg";
 
 export const Calculator = () => {
   const [weight, setWeight] = useState(0);
@@ -32,6 +33,7 @@ export const Calculator = () => {
 
       {isWaight && (
         <div>
+          <img src={bg1} alt="bg" />
           <h2>Требуеться игридиентов</h2>
           <p>Творог: {cheese}г</p>
           <p>Сливки: {cream}г</p>
