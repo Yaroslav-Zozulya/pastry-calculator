@@ -13,7 +13,7 @@ export const Calculator = () => {
   const suger_const = 0.136;
   const cheese_const = 0.741;
   const cream_const = 0.123;
-  console.log("test");
+
   useEffect(() => {
     setCheese(Math.round(weight * cheese_const));
     setCream(Math.round(weight * cream_const));
