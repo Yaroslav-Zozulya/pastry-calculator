@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-
+import { Header } from "@/components/Header/Header";
+console.log(Header);
 export const Calculator = () => {
   const [weight, setWeight] = useState(0);
   const [cheese, setCheese] = useState(0);
@@ -32,6 +33,7 @@ export const Calculator = () => {
 
       {isWaight && (
         <div>
+          <Header />
           <h2>Требуеться игридиентов</h2>
           <p>Творог: {cheese}г</p>
           <p>Сливки: {cream}г</p>
