@@ -10,7 +10,7 @@ const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
 export const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<SharedLayout />}>
+      <Route path="/" element={<SharedLayout />} end>
         <Route index element={<Home />} />
         <Route path="calculators" element={<Calculators />} />
         <Route path="*" element={<NotFound />} />
