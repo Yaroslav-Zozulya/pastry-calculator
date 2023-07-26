@@ -16,7 +16,7 @@ const ViteImageOptimizerConfig = {
 };
 
 export default defineConfig({
-  base: "https://Yaroslav-Zozulya.github.io/pastry-calculator/",
+  base: "/pastry-calculator/",
   plugins: [react(), ViteImageOptimizer(ViteImageOptimizerConfig)],
   resolve: {
     alias: {
