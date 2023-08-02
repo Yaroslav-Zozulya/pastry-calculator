@@ -1,1 +1,0 @@
-import{j as e}from"./index-eaffb445.js";const n=()=>e.jsx("div",{className:"container mx-auto flex justify-center items-center min-h-screen",children:e.jsx("h1",{className:"sm:text-xl md:text-2xl xl:text-5xl text-center font-bold animate-bounce ",children:"Какая-то страница 😉"})});export{n as default};
